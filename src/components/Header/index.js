@@ -2,8 +2,6 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { BsTelephone, BsCart4, BsFillTelephoneFill } from "react-icons/bs";
 import { CiUser } from "react-icons/ci";
 
-
-
 import './Header.scss'
 
 function Header() {
@@ -38,6 +36,10 @@ function Header() {
                         <BsCart4></BsCart4>
                     </div>
                 </div>
+            </div>
+
+            <div>
+                TEST PULL
             </div>
         </div>
     )
