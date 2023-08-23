@@ -4,7 +4,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/users" element={<Header/>} />
+        <Route path="/" element={<Header/>} />
         <Route path="/users/new" element={<Header/>} />
         <Route path="/users/:id" element={<Header/>} />
       </Routes>
