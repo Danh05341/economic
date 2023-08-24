@@ -233,7 +233,7 @@
     transition: linear 0.5s;
     height: 250px;
     display: flex;
-
+    z-index: 999;
     &-btn {
         text-decoration: none;
         color:red;
@@ -243,4 +243,31 @@
         background-color: aqua;
     }
   
+}
+.gtt{
+    position: relative;
+    .gtt-li{
+        position: absolute;
+        top:33px;
+        width: 215px;
+        background-color: aquamarine;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        z-index: 1000;
+        display: none;
+       
+        &-btn
+        {
+            text-decoration: none;
+            color:black;
+            margin: 10px 0px 10px 10px;
+        }
+    }
+    &:hover .gtt-li
+    {
+        display: block;
+        transition: ease 0.5s;
+    }
+
 }
