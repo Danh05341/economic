@@ -17,9 +17,10 @@
 }
 
 .main-item-task {
-    width: 80%;
+    width: 1300px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     
     padding: 20px 0px 20px 0px;
 }
@@ -27,6 +28,7 @@
 
 
 .item-main {
+
     margin: 10px  10px  10px 15px;
     display: block;
     overflow: hidden;
@@ -69,7 +71,7 @@
     margin-top: 30px;
     
     .selling {
-        width: 80%;
+        width: 1200px;
         text-align: center;
         background-color: #fff;
 
