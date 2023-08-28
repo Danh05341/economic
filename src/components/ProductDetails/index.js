@@ -3,6 +3,8 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
 import './ProductDetails.scss'
+import WrapperModel from "./WrapperModel";
+import WrapperImage from "./WrapperImage";
 function ProductDetail() {
     return (
         <div className="product-detail">
@@ -28,22 +30,25 @@ function ProductDetail() {
                 </div>
                 <div className="product-info">
                     <div className="product-image">
-                        <img src="https://bizweb.dktcdn.net/thumb/grande/100/342/645/products/bd30ea8934835dfbad4dca4072b1ba3b.jpg?v=1545572480550%22"></img>
+                        <WrapperImage>
+                            <img src="https://bizweb.dktcdn.net/thumb/grande/100/342/645/products/bd30ea8934835dfbad4dca4072b1ba3b.jpg?v=1545572480550%22"></img>
+
+                        </WrapperImage>
                     </div>
                     <div className="product-option">
                         <div className="product-color">
-                            {/* <div className="product-image">
-                                <img src="https://bizweb.dktcdn.net/thumb/grande/100/342/645/products/bd30ea8934835dfbad4dca4072b1ba3b.jpg?v=1545572480550%22"></img>
-                            </div>
-                            <div className="product-image">
-                                <img src="https://bizweb.dktcdn.net/thumb/grande/100/342/645/products/1788475-l.jpg?v=1545572481460"></img>
-                            </div>
-                            <div className="product-image">
-                                <img src="https://bizweb.dktcdn.net/thumb/grande/100/342/645/products/0c6ae505cd0029d8918b8a6bebc82fe2.jpg?v=1545572483250"></img>
-                            </div>
-                            <div className="product-image">
-                                <img src="https://bizweb.dktcdn.net/100/342/645/products/giay-da-bong-fg-nguoi-lon-den-trang.jpg?v=1545572483563"></img>
-                            </div> */}
+                            <WrapperModel>
+                                <img className="product-img" src="https://bizweb.dktcdn.net/thumb/grande/100/342/645/products/bd30ea8934835dfbad4dca4072b1ba3b.jpg?v=1545572480550%22"></img>
+                            </WrapperModel>
+                            <WrapperModel>
+                                <img className="product-img" src="https://bizweb.dktcdn.net/thumb/grande/100/342/645/products/1788475-l.jpg?v=1545572481460"></img>
+                            </WrapperModel>
+                            <WrapperModel>
+                                <img className="product-img" src="https://bizweb.dktcdn.net/thumb/grande/100/342/645/products/0c6ae505cd0029d8918b8a6bebc82fe2.jpg?v=1545572483250"></img>
+                            </WrapperModel>
+                            <WrapperModel>
+                                <img className="product-img" src="https://bizweb.dktcdn.net/100/342/645/products/giay-da-bong-fg-nguoi-lon-den-trang.jpg?v=1545572483563"></img>
+                            </WrapperModel>
                         </div>
                         <div className="product-bot">
                             <div className="product-name">
@@ -87,7 +92,7 @@ function ProductDetail() {
                             <div className="product-action">
                                 <button className="product-order">MUA NGAY</button>
                                 <button className="product-contact">
-                                <BsFillTelephoneFill className="product-contact-icon"></BsFillTelephoneFill>
+                                    <BsFillTelephoneFill className="product-contact-icon"></BsFillTelephoneFill>
                                     <p>Mua số lượng lớn</p>
                                     <span>Gọi ngay 19006750</span>
                                 </button>
