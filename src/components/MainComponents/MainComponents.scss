@@ -21,7 +21,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+
     padding: 20px 0px 20px 0px;
 }
 
@@ -29,7 +29,7 @@
 
 .item-main {
 
-    margin: 10px  10px  10px 15px;
+    margin: 10px 10px 10px 15px;
     display: block;
     overflow: hidden;
     position: relative;
@@ -69,7 +69,7 @@
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    
+
     .selling {
         width: 1200px;
         text-align: center;
@@ -84,9 +84,187 @@
         font-weight: inherit;
     }
 }
-.selling-list-item
-{
+
+.selling-list-item {
     display: flex;
     flex-wrap: wrap;
-   
+
+}
+
+.sneaker-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    .sneaker {
+        background-color: #fff;
+        width: 1200px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .sneaker-top {
+
+
+            width: 1200px;
+            display: flex;
+            overflow: hidden;
+
+            .sneaker-img {
+
+                width: 470px;
+                height: 300px;
+            }
+
+            .sneaker-right {
+                margin-left: 70px;
+                margin-right: 15px;
+
+                & p {
+                    margin-top: 45px;
+                }
+
+                &-icon {
+                    font-size: 30px;
+                    margin-bottom: 2px;
+                }
+
+                &-btn {
+                    margin-top: 45px;
+
+                    &:hover {
+                        color: crimson !important;
+                    }
+
+                    & a {
+                        color: black;
+                        font-size: 20px;
+                        display: flex;
+                        align-items: center;
+
+                        &:hover {
+                            color: crimson;
+                        }
+                    }
+                }
+            }
+
+            .sneaker-title {
+                font-size: 30px;
+                margin-top: 45px;
+
+                & a {
+                    color: black;
+
+                    &:hover {
+                        color: crimson;
+                    }
+                }
+
+            }
+
+        }
+
+        .sneaker-bot {
+            width: 1200px;
+            margin-top: 15px;
+
+            display: flex;
+            overflow: hidden;
+        }
+    }
+
+
+}
+
+.slip-on-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    .slip-on {
+        background-color: #fff;
+        width: 1200px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .slip-on-top {
+
+
+            width: 1200px;
+            display: flex;
+            overflow: hidden;
+
+            .slip-on-img {
+
+                width: 470px;
+                height: 300px;
+                margin-left: 70px;
+            }
+
+            .slip-on-right {
+                
+                margin-left: 40px;
+                margin-right: 15px;
+
+                & p {
+                    margin-top: 45px;
+                }
+
+                &-icon {
+                    font-size: 30px;
+                    margin-bottom: 2px;
+                }
+
+                &-btn {
+                    margin-top: 45px;
+
+                    &:hover {
+                        color: crimson !important;
+                    }
+
+                    & a {
+                        color: black;
+                        font-size: 20px;
+                        display: flex;
+                        align-items: center;
+
+                        &:hover {
+                            color: crimson;
+                        }
+                    }
+                }
+            }
+
+            .slip-on-title {
+                font-size: 30px;
+                margin-top: 45px;
+
+                & a {
+                    color: black;
+
+                    &:hover {
+                        color: crimson;
+                    }
+                }
+
+            }
+
+        }
+
+        .slip-on-bot {
+            width: 1200px;
+            margin-top: 15px;
+
+            display: flex;
+            overflow: hidden;
+        }
+    }
+
+
 }
