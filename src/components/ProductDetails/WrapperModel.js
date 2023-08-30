@@ -1,8 +1,16 @@
+import { useState } from 'react'
 import './ProductDetails.scss'
 
-function WrapperModel({ primary, children }) {
+function WrapperModel({ currentImage, index, children, onClick }) {
+    const handleOnClick = () => {
+        onClick(index)
+    }
     return (
-        <div className='wrapper-model'>
+        <div
+            className={`wrapper-model ${currentImage === index ? 'active' : ''}`}
+            data-index={index}
+            onClick={handleOnClick}
+        >
             {children}
         </div>
     );
