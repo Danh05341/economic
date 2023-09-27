@@ -3,6 +3,7 @@ import './MainComponents.scss'
 import MainItem from './MainItem'
 import Product from '../Products'
 import { BiChevronRight } from "react-icons/bi";
+
 const MainComponents = () => {
     let sizeImg = [
         {
@@ -66,7 +67,7 @@ const MainComponents = () => {
                 <div className='sneaker-container'>
                     <div className='sneaker'>
                         <div className='sneaker-top'>
-                        <img className='sneaker-img' src='https://bizweb.dktcdn.net/100/342/645/themes/701397/assets/banner_product_nangdong.jpg?1677377108874'></img>
+                            <img className='sneaker-img' src='https://bizweb.dktcdn.net/100/342/645/themes/701397/assets/banner_product_nangdong.jpg?1677377108874'></img>
                             <div className='sneaker-right'>
                                 <div className='sneaker-title'>
                                     <a href='#' >SNEAKER NĂNG ĐỘNG</a>
@@ -94,7 +95,7 @@ const MainComponents = () => {
                 <div className='slip-on-container'>
                     <div className='slip-on'>
                         <div className='slip-on-top'>
-                        <div className='slip-on-right'>
+                            <div className='slip-on-right'>
                                 <div className='slip-on-title'>
                                     <a href='#' >SLIP-ON THANH LỊCH</a>
                                 </div>
@@ -104,7 +105,7 @@ const MainComponents = () => {
 
                             </div>
                             <img className='slip-on-img' src='https://bizweb.dktcdn.net/100/342/645/themes/701397/assets/banner_product_thanhlich.jpg?1677377108874'></img>
-                           
+
                         </div>
                         <div className='slip-on-bot'>
                             <div className='selling-list-item'>
@@ -118,9 +119,50 @@ const MainComponents = () => {
 
                         </div>
 
+
                     </div>
                 </div>
+                <div className='list-container'>
+                    <div className='list-container-main'>
+                        <img style={{width:'99%',marginLeft:'7px'}} src='https://bizweb.dktcdn.net/100/342/645/themes/701397/assets/banner_product_noibat.jpg?1677377108874' />
+                        <div className='list-container-product'>
+                            <div className='list-task'>
+                                <p className='list-task-title'> DANH MỤC</p>
+                                <a className='list-task-a list-hover' href='#'>Trang chủ<BiChevronRight className='list-task-icon'/> </a>
+                                <a className='list-task-a list-hover'  href='#'>Sản phẩm<BiChevronRight className='list-task-icon'/> </a>
+                                    <a className='list-task-a-child list-hover' href='#'>Giày nam<BiChevronRight className='list-task-icon'/> </a>
+                                    <a className='list-task-a-child list-hover' href='#'>Giày nữ<BiChevronRight className='list-task-icon'/> </a>
+                                    <a className='list-task-a-child list-hover' href='#'>Giày bé trai<BiChevronRight className='list-task-icon'/> </a>
+                                    <a className='list-task-a-child list-hover' href='#'>Giày bé gái<BiChevronRight className='list-task-icon'/> </a>
+                                    <a className='list-task-a-child list-hover' href='#'>Giày tây<BiChevronRight className='list-task-icon'/> </a>
+                                <a className='list-task-a list-hover' href='#'>Giày thể thao <BiChevronRight className='list-task-icon'/></a>
+                                
+                                    <a className='list-task-a-child list-hover' href='#'>Giày Ultra boots </a>
+                                    <a className='list-task-a-child list-hover' href='#'>Giày chạy bộ </a>
+                                    <a className='list-task-a-child list-hover' href='#'>Giày đi phượt<BiChevronRight className='list-task-icon'/> </a>
+                                    <a className='list-task-a-child list-hover' href='#'>Giày bitis </a>
+                                    <a className='list-task-a-child list-hover' href='#'>Giày nike </a>
+                                <a className='list-task-a list-hover' href='#'>Liên hệ </a>
+                                <a className='list-task-a list-hover' href='#'>Giới thiệu</a>
+                                <a className='list-task-a list-hover' href='#'>Tin tức</a>
+                            </div>
+                            <div className='list-product'>
+                                <Product/>
+                                <Product/>
+                                <Product/>
+                                <Product/>
+                                <Product/>
+                                <Product/>
+                                <Product/>
+                                <Product/>
+                                <div className='list-product-btn'>
+                                    <a href='/' className='list-product-btn-all'>Xem tất cả <BiChevronRight/></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
             </div>
         </Layout>
     )
