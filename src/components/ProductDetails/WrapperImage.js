@@ -38,8 +38,8 @@ function WrapperImage(props) {
         })
     }
     return (
-        <div className="wrapper-image" onMouseMove={handleOnMouseMove} onMouseLeave={handleOnMouseLeave}>
-            <img className='image' src={props.src} alt={props.alt}></img>
+        <div className="wrapper-image" >
+            <img className='image' onMouseMove={handleOnMouseMove} onMouseLeave={handleOnMouseLeave} src={props.src} alt={props.alt}></img>
             <div className="mouse-square" style={mouseSquare}></div>
             <div className="zoom-image" style={zoomImage} >
                 <div className="image" style={image}></div>
